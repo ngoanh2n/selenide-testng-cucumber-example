@@ -6,7 +6,7 @@ import static com.codeborne.selenide.Condition.text;
 import static com.codeborne.selenide.Selenide.$;
 
 /**
- * LoginPage class
+ * HomePage class
  * <br/>
  *
  * @author ngoanh2n@gmail.com (Ho Huu Ngoan)

@@ -42,7 +42,7 @@
 > **Gradle**: <em>6.1.1</em><br/>
 
 ## **Frameworks/Libraries**
-> **Selenide**: <em>5.6.0 - Web Driver</em><br/>
+> **Selenide**: <em>5.6.1 - Web Driver</em><br/>
 > **TestNG**: <em>7.1.0 - Testing Framework</em><br/>
 > **Cucumber**: <em>5.0.0 - Behavior Driven Development (BDD) Tool</em><br/>
 > **Cucumber Reporting**: <em>0.1.16 - Generating Reports From CucumberTestReport.json For Gradle</em><br/>
