@@ -21,6 +21,7 @@
 
 - [**Environment**](#environment)
 - [**Frameworks/Libraries**](#frameworkslibraries)
+- [**Project Structure**](#project-structure)
 - [**How To Use**](#how-to-use)
   - [**Clone Repository**](#clone-repository)
   - [**Configuration Files**](#configuration-files)
@@ -46,6 +47,48 @@
 > **TestNG**: <em>7.1.0 - Testing Framework</em><br/>
 > **Cucumber**: <em>5.0.0 - Behavior Driven Development (BDD) Tool</em><br/>
 > **Cucumber Reporting**: <em>0.1.16 - Generating Reports From CucumberTestReport.json For Gradle</em><br/>
+
+## **Project Structure**
+```
+├── gradle
+│   └── wrapper
+│       ├── gradle-wrapper.jar
+│       └── gradle-wrapper.properties
+├── images
+│   └── **/*.png
+├── src/test
+│   ├── java/com/github/ngoanh2n
+│   │   ├── common
+│   │   │   ├── BasePage.java
+│   │   │   ├── BaseTest.java
+│   │   │   └── ScenarioHooks.java
+│   │   ├── pages
+│   │   │   ├── HomePage.java
+│   │   │   └── LoginPage.java
+│   │   ├── scenarios
+│   │   │   └── ExampleTest.java
+│   │   └── steps
+│   │       ├── HomePageStepsDefinition.java
+│   │       └── LoginPageStepsDefinition.java
+│   └── resources
+│       ├── com/github/ngoanh2n/features
+│       │   ├── home
+│       │   │   ├── welcome-title.feature
+│       │   └── login
+│       │       ├── login-failure.feature
+│       │       └── login-success.feature
+│       ├── log4j.properties
+│       └── selenide.properties
+├── .gitignore
+├── .travis.yml
+├── LICENSE
+├── README.md
+├── build.gradle
+├── gradle.properties
+├── gradlew
+├── gradlew.bat
+└── settings.gradle
+```
 
 ## **How To Use**
 ### **Clone Repository**
