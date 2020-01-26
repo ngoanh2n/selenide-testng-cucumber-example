@@ -4,6 +4,8 @@
 #
 ############################################
 
+@Client
+@Login
 @LoginFailure
 Feature: Gitlab
   test login function for client

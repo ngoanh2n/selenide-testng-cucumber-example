@@ -4,6 +4,8 @@
 #
 ############################################
 
+@Client
+@Home
 @HomeWelcome
 Feature: Gitlab
   test displaying home welcome title for client
