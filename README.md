@@ -126,12 +126,25 @@ Giving values can be `TestPackage`, `TestClass`, `TestMethod`
 
 #### **Filter Tags**
 Choose feature files to run by passing system property `cucumber.filter.tags`<br/>
-> `./gradlew clean test -Dcucumber.filter.tags="@HomeWelcome"`<br/>
+> `./gradlew clean test -Dcucumber.filter.tags="TAG_EXPRESSION"`<br/>
 
 Available tags in project's features:
-- `@LoginSuccess` attached in feature [login-success.feature](src/test/resources/com/github/ngoanh2n/features/login/login-success.feature)
-- `@LoginFailure` attached in feature [login-failure.feature](src/test/resources/com/github/ngoanh2n/features/login/login-failure.feature)
-- `@HomeWelcome` attached in feature [welcome-title.feature](src/test/resources/com/github/ngoanh2n/features/home/welcome-title.feature)
+- `Client`, `Home`, `@HomeWelcome` tagged in feature [welcome-title.feature](src/test/resources/com/github/ngoanh2n/features/home/welcome-title.feature)
+- `Client`, `Login`, `@LoginSuccess` tagged in feature [login-success.feature](src/test/resources/com/github/ngoanh2n/features/login/login-success.feature)
+- `Client`, `Login`, `@LoginFailure` tagged in feature [login-failure.feature](src/test/resources/com/github/ngoanh2n/features/login/login-failure.feature)
+
+A tag expression is an infix boolean expression. Below are some examples:
+
+| Tag Expression               | Description            | Features Filtered |
+| :--------------------------- | :--------------------- | :---------------- |
+| `@Client` | Features tagged with `@Client` | [welcome-title](src/test/resources/com/github/ngoanh2n/features/home/welcome-title.feature),<br/> [login-success](src/test/resources/com/github/ngoanh2n/features/login/login-success.feature),<br/> [login-failure](src/test/resources/com/github/ngoanh2n/features/login/login-failure.feature) |
+| `@Login or @HomeWelcome` | Features tagged with either `@Login` or `@HomeWelcome` | [welcome-title](src/test/resources/com/github/ngoanh2n/features/home/welcome-title.feature),<br/> [login-success](src/test/resources/com/github/ngoanh2n/features/login/login-success.feature),<br/> [login-failure](src/test/resources/com/github/ngoanh2n/features/login/login-failure.feature) |
+| `@Login and @LoginFailure` | Features tagged with both `@Login` and `@LoginFailure` | [login-failure](src/test/resources/com/github/ngoanh2n/features/login/login-failure.feature) |
+| `@Client and not @Login` | Features tagged with `@Client` that aren’t also tagged with `@Login` | [welcome-title](src/test/resources/com/github/ngoanh2n/features/home/welcome-title.feature) |
+
+
+For even more advanced tag expressions you can use parenthesis for clarity, or to change operator precedence:
+> `(@Login or @Home) and (not @LoginFailure)` -> [welcome-title](src/test/resources/com/github/ngoanh2n/features/home/welcome-title.feature), [login-success](src/test/resources/com/github/ngoanh2n/features/login/login-success.feature)
 
 ### **Reports**
 #### **Cucumber**
