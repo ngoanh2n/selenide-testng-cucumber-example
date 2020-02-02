@@ -7,11 +7,6 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-blueviolet.svg)](https://opensource.org/licenses/MIT)
 [![badge-jdk](https://img.shields.io/badge/jdk-8-blue.svg)](http://www.oracle.com/technetwork/java/javase/downloads/index.html)
 [![Build Status](https://travis-ci.org/ngoanh2n/selenide-testng-cucumber-example.svg?branch=master)](https://travis-ci.org/ngoanh2n/selenide-testng-cucumber-example)
-[![GitHub contributors](https://img.shields.io/github/contributors/ngoanh2n/selenide-testng-cucumber-example.svg)](https://github.com/ngoanh2n/selenide-testng-cucumber-example/graphs/contributors/)
-[![GitHub issues](https://img.shields.io/github/issues/ngoanh2n/selenide-testng-cucumber-example.svg)](https://github.com/ngoanh2n/selenide-testng-cucumber-example/issues/)
-[![GitHub issues-closed](https://img.shields.io/github/issues-closed/ngoanh2n/selenide-testng-cucumber-example.svg)](https://github.com/ngoanh2n/selenide-testng-cucumber-example/issues?q=is%3Aissue+is%3Aclosed)
-[![GitHub pull-requests](https://img.shields.io/github/issues-pr/ngoanh2n/selenide-testng-cucumber-example.svg)](https://github.com/ngoanh2n/selenide-testng-cucumber-example/pulls/)
-[![GitHub pull-requests closed](https://img.shields.io/github/issues-pr-closed/ngoanh2n/selenide-testng-cucumber-example.svg)](https://github.com/ngoanh2n/selenide-testng-cucumber-example/pulls?q=is%3Apulls+is%3Aclosed)
 
 # Selenide, TestNG, Cucumber Example
 
@@ -129,9 +124,9 @@ Choose feature files to run by passing system property `cucumber.filter.tags`<br
 > `./gradlew clean test -Dcucumber.filter.tags="TAG_EXPRESSION"`<br/>
 
 Available tags in project's features:
-- `Client`, `Home`, `@HomeWelcome` tagged in feature [welcome-title.feature](src/test/resources/com/github/ngoanh2n/features/home/welcome-title.feature)
-- `Client`, `Login`, `@LoginSuccess` tagged in feature [login-success.feature](src/test/resources/com/github/ngoanh2n/features/login/login-success.feature)
-- `Client`, `Login`, `@LoginFailure` tagged in feature [login-failure.feature](src/test/resources/com/github/ngoanh2n/features/login/login-failure.feature)
+- `@Client`, `@Home`, `@HomeWelcome` tagged in feature [welcome-title.feature](src/test/resources/com/github/ngoanh2n/features/home/welcome-title.feature)
+- `@Client`, `@Login`, `@LoginSuccess` tagged in feature [login-success.feature](src/test/resources/com/github/ngoanh2n/features/login/login-success.feature)
+- `@Client`, `@Login`, `@LoginFailure` tagged in feature [login-failure.feature](src/test/resources/com/github/ngoanh2n/features/login/login-failure.feature)
 
 A tag expression is an infix boolean expression. Below are some examples:
 
