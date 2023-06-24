@@ -12,7 +12,7 @@ import static com.codeborne.selenide.Selenide.$;
  * ScenarioHooks class
  * <br/>
  *
- * @author ngoanh2n@gmail.com (Ho Huu Ngoan)
+ * @author ngoanh2n
  */
 
 public class ScenarioHooks {

@@ -7,7 +7,7 @@ import com.codeborne.selenide.impl.SelenidePageFactory;
  * BasePage class
  * <br/>
  *
- * @author ngoanh2n@gmail.com (Ho Huu Ngoan)
+ * @author ngoanh2n
  */
 
 public abstract class BasePage extends SelenidePageFactory {

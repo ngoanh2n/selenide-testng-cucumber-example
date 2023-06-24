@@ -9,7 +9,7 @@ import io.cucumber.java.en.When;
  * LoginPageStepsDefinition class
  * <br/>
  *
- * @author ngoanh2n@gmail.com (Ho Huu Ngoan)
+ * @author ngoanh2n
  */
 
 public class LoginPageStepsDefinition {
